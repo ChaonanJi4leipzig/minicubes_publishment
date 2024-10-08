@@ -1,0 +1,123 @@
+{
+    "type": "Collection",
+    "id": "deepextremecubes",
+    "stac_version": "1.0.0",
+    "description": "This dataset is tailored to map around these extremes, focusing on persistent natural vegetation, and facilitate biosphere dynamics forecasting in response to the compound heatwave and drought extremes. It comprises over 40,000 globally sampled small data cubes (i.e. minicubes) in zarr format, with a spatial coverage of 2.5 by 2.5 km. Each minicube includes (i) Sentinel-2 L2A images, (ii) ERA5-Land variables and generated extreme event cube covering 2016 to 2022, and (iii) ancillary land cover and topography maps.",
+    "links": [
+        {
+            "rel": "root",
+            "href": "../../catalog.json",
+            "type": "application/json",
+            "title": "Open Science Catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://s3.waw2-1.cloudferro.com/swift/v1/AUTH_3f7e5dd853f54cebb046a29a69f1bba6/Catalogs/4DANTARCTICA/antarctic-ice-sheet-velocity-monthly-2021/catalog.json",
+            "type": "application/json",
+            "title": "Items"
+        },
+        {
+            "rel": "via",
+            "href": "https://cryoportal.enveo.at/data_files/2021-ESACCI-L3C-AIS-IV-S1-1M_200m-fv1.1_20220420.zip",
+            "title": "Access"
+        },
+        {
+            "rel": "via",
+            "href": "https://climate.esa.int/en/projects/ice-sheets-antarctic/",
+            "title": "Documentation"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json",
+            "title": "Products"
+        },
+        {
+            "rel": "related",
+            "href": "../../projects/4d-antarctica/collection.json",
+            "type": "application/json",
+            "title": "Project: 4D-ANTARCTICA"
+        },
+        {
+            "rel": "related",
+            "href": "../../themes/cryosphere/catalog.json",
+            "type": "application/json",
+            "title": "Theme: Cryosphere"
+        },
+        {
+            "rel": "related",
+            "href": "../../variables/ice-velocity/catalog.json",
+            "type": "application/json",
+            "title": "Variable: Ice Velocity"
+        },
+        {
+            "rel": "related",
+            "href": "../../eo-missions/sentinel-1/catalog.json",
+            "type": "application/json",
+            "title": "EO Mission: Sentinel-1"
+        },
+        {
+            "rel": "self",
+            "href": "https://esa-earthcode.github.io/open-science-catalog-metadata/products/ice-sheet-velocity-antarctic-2021/collection.json",
+            "type": "application/json"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/osc/v1.0.0-rc.3/schema.json",
+        "https://stac-extensions.github.io/cf/v0.2.0/schema.json"
+    ],
+    "osc:project": "ai4science:deepextremes",
+    "osc:status": "completed",
+    "osc:region": "global",
+    "osc:type": "product",
+    "created": "2023-10-30T00:00:00Z",
+    "version": "1.0",
+    "start_datetime": "2016-01-01T00:00:00Z",
+    "end_datetime": "2022-10-10T00:00:00Z",
+    "cf:parameter": [
+        {
+            "name": "deepextremecubes-minicubes"
+        }
+    ],
+    "osc:themes": [
+        "biosphere"
+    ],
+    "osc:variables": [
+        "surface reflectance",
+        "land cover",
+        "climate extremes",
+        "digital elevation model"
+    ],
+    "osc:missions": [
+        "sentinel-2"
+    ],
+    "updated": "2024-09-12T20:32:06.219108Z",
+    "title": "DeepExtremeCubes: Earth system spatio-temporal data for assessing compound heatwave and drought impacts",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "Climate Extremes",
+        "Ecology",
+        "Remote Sensing",
+        "Machine Learning"
+    ],
+    "temporal": {
+        "interval": [
+            [
+                "2016-01-01T00:00:00Z",
+                "2022-10-10T00:00:00Z"
+            ]
+        ]
+    }
+}
